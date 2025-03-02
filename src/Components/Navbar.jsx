@@ -1,0 +1,89 @@
+import { useState, useEffect, useRef } from "react";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
+import logo from "../assets/navLogo.svg";
+
+const navLinks = [
+  { title: "Home", href: "#" },
+  { title: "Products", href: "#" },
+  { title: "Support", href: "#" },
+  { title: "About", href: "#" },
+  { title: "Contact", href: "#" },
+];
+
+const Navbar = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const mobileNavRef = useRef(null);
+
+  // Close mobile nav when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileNavRef.current &&
+        !mobileNavRef.current.contains(event.target)
+      ) {
+        setIsMobileNavOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <nav className="bg-[#1A0B2E] text-white">
+      <div className="max-w-5xl mx-auto flex justify-between items-center py-6 px-4">
+        {/* Logo */}
+        <div>
+          <img src={logo} alt="Nav Logo" className="w-8 md:w-12" />
+        </div>
+
+        {/* (Desktop) Nav Items */}
+        <ul className="hidden md:flex gap-x-10">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.href}
+                className="hover:text-purple-300 transition-colors"
+              >
+                {link.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* (Mobile) Nav Toggle Button */}
+        <div className="md:hidden" ref={mobileNavRef}>
+          <button onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+            {isMobileNavOpen ? (
+              <IoMdClose className="text-3xl text-white" />
+            ) : (
+              <IoIosMenu className="text-3xl text-white" />
+            )}
+          </button>
+
+          {/* (Mobile) Nav Items */}
+          <ul
+            className={`z-50 bg-[#1A0B2E]/90 backdrop-blur-2xl absolute origin-top duration-200 ${
+              isMobileNavOpen ? "scale-y-100" : "scale-y-0"
+            } top-16 right-4 w-48 p-5 flex flex-col gap-5 font-semibold rounded-lg shadow-lg`}
+          >
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.href}
+                  className="block text-white hover:text-purple-300 transition-colors"
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
