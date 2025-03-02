@@ -9,7 +9,7 @@ const About = () => {
         <h4 className="text-xl flex items-center">
           <span className="mr-2">Currently, I'm a Software Engineer at</span>
           <a
-            href="https://appszonebd.com/"
+            href="https://appszonebd.com"
             target="_blank"
             className="flex items-center"
           >
