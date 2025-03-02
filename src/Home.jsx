@@ -2,6 +2,7 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
+import Experience from "./Components/Experience";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <main className="max-w-5xl mx-auto">
           <Banner />
           <About />
+          <Experience />
         </main>
         <Footer />
       </div>
