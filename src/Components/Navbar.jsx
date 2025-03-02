@@ -1,6 +1,6 @@
+import logo from "../assets/navLogo.svg";
 import { useState, useEffect, useRef } from "react";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
-import logo from "../assets/navLogo.svg";
 
 const navLinks = [
   { title: "Home", href: "#" },
@@ -14,7 +14,6 @@ const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const mobileNavRef = useRef(null);
 
-  // Close mobile nav when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -34,12 +33,9 @@ const Navbar = () => {
   return (
     <nav className="bg-[#1A0B2E] text-white">
       <div className="max-w-5xl mx-auto flex justify-between items-center py-6 px-4">
-        {/* Logo */}
         <div>
           <img src={logo} alt="Nav Logo" className="w-8 md:w-12" />
         </div>
-
-        {/* (Desktop) Nav Items */}
         <ul className="hidden md:flex gap-x-10">
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -52,8 +48,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        {/* (Mobile) Nav Toggle Button */}
         <div className="md:hidden" ref={mobileNavRef}>
           <button onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
             {isMobileNavOpen ? (
@@ -62,8 +56,6 @@ const Navbar = () => {
               <IoIosMenu className="text-3xl text-white" />
             )}
           </button>
-
-          {/* (Mobile) Nav Items */}
           <ul
             className={`z-50 bg-[#1A0B2E]/90 backdrop-blur-2xl absolute origin-top duration-200 ${
               isMobileNavOpen ? "scale-y-100" : "scale-y-0"
