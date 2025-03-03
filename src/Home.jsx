@@ -1,5 +1,5 @@
 import About from "./Components/About";
-import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import Experience from "./Components/Experience";
@@ -16,7 +16,7 @@ const Home = () => {
           <Experience />
           <Skills />
         </main>
-        <Contact />
+        <Footer />
       </div>
     </div>
   );

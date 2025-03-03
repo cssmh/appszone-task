@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub, FaTwitter, FaGoogle } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
 
-const Contact = () => {
+const Footer = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 bg-[#11071f] text-white py-20">
       <div className="text-center md:text-left">
@@ -40,4 +40,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Footer;

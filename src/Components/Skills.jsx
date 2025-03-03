@@ -12,9 +12,12 @@ import ai from "../assets/ai.png";
 import express from "../assets/express.png";
 import mongo from "../assets/mongo.png";
 import logo from "../assets/navLogo.svg";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+
 const Skills = () => {
   return (
-    <div className="bg-[#11071f] py-20">
+    <div className="bg-[#11071f] py-20 flex flex-col items-center relative">
       <h1 className="text-center text-2xl">
         I'm currently looking to join a{" "}
         <span className="text-[#7b47c4]">cross-functional</span> team
@@ -39,9 +42,18 @@ const Skills = () => {
         <img className="w-7" src={express} alt="express" />
         <img className="w-7" src={mongo} alt="mongo" />
       </div>
-      <div>
-        <img src={logo} alt="logo" className="rotate-90" />
+
+      {/* Logo in Center */}
+      <div className="relative mt-16">
+        <img
+          src={logo}
+          alt="logo"
+          className="w-24 h-24 p-2 rounded-full shadow-lg"
+        />
       </div>
+      <div className="absolute top-1/2 left-1/4 w-[50%] h-[200px] border border-white rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-[55%] left-[22%] w-[55%] h-[220px] border border-white rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-[60%] left-[20%] w-[60%] h-[240px] border border-white rounded-[50%] skew-y-[0deg]"></div>
     </div>
   );
 };
