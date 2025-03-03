@@ -1,6 +1,4 @@
-import { FaFacebook } from "react-icons/fa";
 import { TiSocialFacebook } from "react-icons/ti";
-
 const About = () => {
   return (
     <div className="py-5">
