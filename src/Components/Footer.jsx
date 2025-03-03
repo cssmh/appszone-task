@@ -13,7 +13,7 @@ const Footer = () => {
         </p>
         <p className="text-gray-200 mt-4">ibrhaimmemon930@gmail.com</p>
       </div>
-      <div className="flex gap-6 mt-6">
+      <div className="flex justify-center lg:justify-normal gap-6 mt-6">
         <a
           href="https://linkedin.com/in/yourprofile"
           target="_blank"

@@ -56,9 +56,9 @@ const Experience = () => {
   ];
 
   return (
-    <section className="relative py-28">
-      <h1 className="text-4xl">Work Experience</h1>
-      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-5 mt-14 font-roboto">
+    <section className="relative py-20 lg:py-28 px-3 lg:px-0">
+      <h1 className="text-2xl lg:text-4xl">Work Experience</h1>
+      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 lg:mt-14 font-roboto">
         {experience.map((item) => (
           <div
             key={item.id}
