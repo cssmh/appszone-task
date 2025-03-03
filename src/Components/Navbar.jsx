@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#1A0B2E] text-white">
-      <div className="max-w-5xl mx-auto flex justify-between items-center py-6 px-4">
+      <div className="max-w-5xl mx-auto flex justify-between items-center py-6 px-6 md:px-4">
         <div>
           <img src={logo} alt="Nav Logo" className="w-8 md:w-12" />
         </div>

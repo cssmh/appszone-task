@@ -3,12 +3,12 @@ import bottomArrow from "../assets/bottom_arrow.png";
 
 const Banner = () => {
   return (
-    <section className="relative flex text-white bg-[#10051e]">
-      <div className="flex justify-center items-center w-[380px] h-[380px] rounded-full bg-[radial-gradient(circle,rgba(66,30,113,1)_26%,rgba(40,16,76,0)_65%)] transform -ml-24 mt-24 z-0">
-        <div className="flex justify-center items-center w-[250px] h-[250px] rounded-full bg-[radial-gradient(circle,rgba(181,170,193,1)_10%,rgba(40,17,77,0)_65%)] z-0">
+    <section className="relative flex flex-col md:flex-row text-white bg-[#10051e] p-4 md:p-0">
+      <div className="flex justify-center items-center w-[200px] h-[200px] md:w-[380px] md:h-[380px] rounded-full bg-[radial-gradient(circle,rgba(66,30,113,1)_26%,rgba(40,16,76,0)_65%)] transform mx-auto md:mx-0 md:-ml-24 mt-12 md:mt-24 z-0">
+        <div className="flex justify-center items-center w-[120px] h-[120px] md:w-[250px] md:h-[250px] rounded-full bg-[radial-gradient(circle,rgba(181,170,193,1)_10%,rgba(40,17,77,0)_65%)] z-0">
           <img
             src={imgBanner}
-            alt="Hero"
+            alt="imgBanner"
             width={150}
             height={150}
             className="-translate-y-2"
@@ -18,17 +18,17 @@ const Banner = () => {
       <img
         src={bottomArrow}
         alt="Hero"
-        className="absolute top-[88px] left-28"
+        className="hidden md:block absolute top-[88px] left-28"
       />
-      <div className="mt-[105px] -ml-14">
-        <h3 className="text-xl -ml-3">
+      <div className="mt-8 md:mt-[105px] md:-ml-14 text-center md:text-left">
+        <h3 className="text-lg md:text-xl -ml-3">
           Hello! I am{" "}
           <span className="text-[#7127BA] font-semibold">Ibrahim Momen</span>
         </h3>
-        <div className="mt-[68px]">
-          <h3 className="text-xl">A Designer who</h3>
+        <div className="mt-6 md:mt-[68px]">
+          <h3 className="text-lg md:text-xl">A Designer who</h3>
           <div>
-            <h1 className="text-6xl mt-2">
+            <h1 className="text-4xl md:text-6xl mt-2">
               Judges a book <br /> by its{" "}
               <span className="text-purple-400 mr-0.5">cover</span>
               <span>...</span>
