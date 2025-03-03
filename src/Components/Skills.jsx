@@ -34,7 +34,7 @@ const Skills = () => {
         <img className="w-7" src={js} alt="js" />
         <img className="w-7" src={css} alt="css" />
       </div>
-      <div className="flex justify-center gap-4 mt-3 items-center">
+      <div className="flex justify-center gap-4 mt-3 pb-44 items-center">
         <img className="w-7" src={ad} alt="ad" />
         <img className="w-7" src={next} alt="next" />
         <img className="w-7" src={g} alt="g" />
@@ -42,18 +42,16 @@ const Skills = () => {
         <img className="w-7" src={express} alt="express" />
         <img className="w-7" src={mongo} alt="mongo" />
       </div>
-
-      {/* Logo in Center */}
-      <div className="relative mt-16">
+      <div className="relative flex justify-center items-center w-[150px] h-[150px] rounded-full bg-[radial-gradient(circle,rgb(97,49,152)_10%,rgba(40,17,77,0)_65%)] z-0">
         <img
           src={logo}
           alt="logo"
-          className="w-24 h-24 p-2 rounded-full shadow-lg"
+          className="w-24 h-24 rotate-90 p-2 rounded-full shadow-lg"
         />
       </div>
-      <div className="absolute top-1/2 left-1/4 w-[50%] h-[200px] border border-white rounded-[50%] skew-y-[0deg]"></div>
-      <div className="absolute top-[55%] left-[22%] w-[55%] h-[220px] border border-white rounded-[50%] skew-y-[0deg]"></div>
-      <div className="absolute top-[60%] left-[20%] w-[60%] h-[240px] border border-white rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-3/5 left-1/4 w-[50%] h-[200px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-3/5 left-[22%] w-[55%] h-[220px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-3/5 left-[20%] w-[60%] h-[240px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
     </div>
   );
 };
