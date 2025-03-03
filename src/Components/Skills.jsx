@@ -49,9 +49,9 @@ const Skills = () => {
           className="w-24 h-24 rotate-90 p-2 rounded-full shadow-lg"
         />
       </div>
-      <div className="absolute top-3/5 left-1/4 w-[50%] h-[200px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
-      <div className="absolute top-3/5 left-[22%] w-[55%] h-[220px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
-      <div className="absolute top-3/5 left-[20%] w-[60%] h-[240px] border border-[#502877] rounded-[50%] skew-y-[0deg]"></div>
+      <div className="absolute top-3/5 left-1/4 w-[50%] h-[200px] border border-[#502877] rounded-[50%]"></div>
+      <div className="absolute top-3/5 left-[22%] w-[55%] h-[220px] border border-[#502877] rounded-[50%]"></div>
+      <div className="absolute top-3/5 left-[20%] w-[60%] h-[240px] border border-[#502877] rounded-[50%]"></div>
     </div>
   );
 };

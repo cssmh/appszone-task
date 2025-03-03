@@ -4,6 +4,7 @@ import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import Experience from "./Components/Experience";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
           <About />
           <Experience />
           <Skills />
+          <Projects />
         </main>
         <Footer />
       </div>
