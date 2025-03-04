@@ -93,7 +93,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="relative size-[180px] flex justify-center items-center rounded-full">
-        <div className="relative bottom-10 flex justify-center items-center w-[150px] h-[150px] rounded-full bg-[radial-gradient(circle,rgb(97,49,152)_10%,rgba(40,17,77,0)_65%)] z-0">
+        <div className="relative bottom-10 flex justify-center items-center w-[150px] h-[150px] rounded-full bg-[radial-gradient(circle,rgb(120,70,180)_10%,rgba(40,17,77,0.2)_65%)] z-0">
           <img
             src={logo}
             alt="logo"
