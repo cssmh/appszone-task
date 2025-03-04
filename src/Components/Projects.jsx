@@ -34,7 +34,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className="py-20">
-      <div className="flex flex-col space-y-36">
+      <div className="flex flex-col space-y-32">
         {projects.map((project, i) => (
           <div
             key={i}
@@ -60,7 +60,6 @@ const Projects = () => {
               <h1 className="text-3xl font-semibold text-[#CCD6F6]">
                 {project.title}
               </h1>
-
               <div
                 className={`z-10 absolute ${
                   i % 2 !== 0 ? "transform -translate-x-[90px]" : ""
@@ -69,7 +68,6 @@ const Projects = () => {
                 <div className="text-left bg-[#201335]/30 w-[550px] -mr-10 mt-8 backdrop-blur-2xl py-5 px-8 pr-12 text-[#B6BDDE] font-medium rounded-2xl">
                   {project.description}
                 </div>
-
                 <div
                   className={`flex ${
                     i % 2 !== 0 ? "justify-end" : "justify-start"
@@ -80,7 +78,6 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-
             <div
               className={`relative flex-1 bg-[#2B0B3A] pt-8  ${
                 i % 2 !== 0 ? "pr-10" : "pl-10"
