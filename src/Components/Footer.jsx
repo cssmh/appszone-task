@@ -1,9 +1,9 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaGoogle } from "react-icons/fa";
+import { FaLinkedin, FaGoogle } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 bg-[#11071f] text-white mt-14 lg:mt-0 py-20">
+    <div className="max-w-5xl mx-auto px-4 bg-[#11071f] text-white py-20">
       <div className="text-center md:text-left">
         <h3 className="text-xl font-semibold mb-6">Contact</h3>
         <p className="text-gray-200 my-2">

@@ -7,7 +7,7 @@ const GlowBg = ({ className }) => {
   return (
     <div
       className={cn(
-        "w-[580px] h-[580px] rounded-full bg-[radial-gradient(circle,rgba(117,60,171,0.9)_0%,rgba(42,18,80,1)_48%,rgba(30,12,59,1)_59%,rgba(25,10,51,1)_63%,rgba(25,10,50,0.05)_70%)] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2",
+        "w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(117,60,171,0.9)_0%,rgba(42,18,80,1)_48%,rgba(30,12,59,1)_59%,rgba(25,10,51,1)_63%,rgba(25,10,50,0.05)_70%)] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2",
         className
       )}
     />
@@ -31,8 +31,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-10 lg:py-20">
-      <div className="flex flex-col space-y-32">
+    <section className="py-8 lg:py-20">
+      <div className="flex flex-col space-y-8 lg:space-y-32">
         {projects.map((project, i) => (
           <div
             key={i}
@@ -55,7 +55,7 @@ const Projects = () => {
               } pt-5`}
             >
               <h6 className="text-[#9857D3] font-semibold">Featured Project</h6>
-              <h1 className="text-3xl font-semibold text-[#ccd6f6]">
+              <h1 className="text-2xl lg:text-3xl font-semibold text-[#ccd6f6]">
                 Example Project
               </h1>
               <div
@@ -63,7 +63,7 @@ const Projects = () => {
                   i % 2 !== 0 ? "transform lg:-translate-x-[90px]" : ""
                 }`}
               >
-                <div className="text-left bg-[#201335]/30 lg:w-[550px] lg:-mr-10 mt-8 backdrop-blur-2xl py-5 px-8 lg:pr-12 text-[#B6BDDE] font-medium rounded-2xl">
+                <div className="text-left bg-[#201335]/30 lg:w-[550px] lg:-mr-10 mt-8 backdrop-blur-2xl py-3 lg:py-5 px-4 lg:px-8 lg:pr-12 text-[#B6BDDE] font-medium rounded-2xl">
                   {project.description}
                 </div>
                 <div
