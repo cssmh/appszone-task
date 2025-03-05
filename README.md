@@ -2,6 +2,8 @@
 
 This project is a front-end design implementation based on a Figma template provided by AppsZone. The goal is to assess practical knowledge of front-end development, problem-solving abilities, and creativity. The project is built using **React.js**, **TailwindCSS v4**, and **Vite** for a fast and modern development experience.
 
+**Live Demo:** [https://appszone-task.vercel.app](https://appszone-task.vercel.app)
+
 ---
 
 ## Table of Contents
@@ -59,7 +61,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/cssmh/appszone-task
-
+   git clone https://github.com/cssmh/appszone-task.git   
+   
    npm run dev
    ```
