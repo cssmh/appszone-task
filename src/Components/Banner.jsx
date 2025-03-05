@@ -1,5 +1,6 @@
 import imgBanner from "../assets/hero.png";
 import bottomArrow from "../assets/bottom_arrow.png";
+import border from "../assets/border.png";
 
 const Banner = () => {
   return (
@@ -26,11 +27,18 @@ const Banner = () => {
           <span className="text-[#7127BA] font-semibold">Ibrahim Momen</span>
         </h3>
         <div className="mt-6 md:mt-[68px]">
-          <h3 className="text-lg md:text-xl">A Designer who</h3>
+          <h3 className="text-lg md:text-xl underline">A Designer who</h3>
           <div>
-            <h1 className="text-4xl md:text-6xl mt-2">
+            <h1 className="text-3xl md:text-5xl mt-2">
               Judges a book <br /> by its{" "}
-              <span className="text-purple-400 mr-0.5">cover</span>
+              <span className="relative text-[#7127BA]">
+                cover{" "}
+                <img
+                  src={border}
+                  alt="border"
+                  className="absolute top-1 right-1"
+                />
+              </span>
               <span>...</span>
             </h1>
             <p className="text-xs text-gray-300 mt-3">

@@ -36,7 +36,7 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="Nav Logo" className="w-8 md:w-12" />
         </div>
-        <ul className="hidden md:flex gap-x-10">
+        <ul className="hidden md:flex gap-x-10 font-roboto">
           {navLinks.map((link, index) => (
             <li key={index}>
               <a
@@ -59,7 +59,7 @@ const Navbar = () => {
           <ul
             className={`z-50 bg-[#1A0B2E]/90 backdrop-blur-2xl absolute origin-top duration-200 ${
               isMobileNavOpen ? "scale-y-100" : "scale-y-0"
-            } top-16 right-4 w-48 p-5 flex flex-col gap-5 font-semibold rounded-lg shadow-lg`}
+            } top-16 right-4 w-48 p-5 flex flex-col gap-5 font-semibold rounded-lg shadow-lg font-roboto`}
           >
             {navLinks.map((link, index) => (
               <li key={index}>

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="py-5 px-4 lg:px-0 text-center lg:text-left">
       <div className="space-y-2">
-        <h1 className="text-3xl lg:text-6xl">I'm a Software Engineer.</h1>
+        <h1 className="text-3xl lg:text-5xl">I'm a Software Engineer.|</h1>
         <h4 className="text-lg sm:text-xl flex flex-col sm:flex-row justify-center lg:justify-start items-center">
           <span className="mb-1 sm:mb-0 sm:mr-2">
             Currently, I'm a Software Engineer at

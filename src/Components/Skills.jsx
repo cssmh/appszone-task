@@ -103,9 +103,9 @@ const Skills = () => {
         <div className="w-[295px] h-[164px] absolute -top-8 bg-transparent border-b border-[#65339A] rounded-[50%]" />
         <div className="w-[265px] h-[185px] absolute -top-8 bg-transparent border-b border-[#65339A] rounded-[70%]" />
       </div>
-      <div className="absolute top-3/5 left-1/4 w-[50%] h-[200px] border border-[#502877] rounded-[50%]"></div>
-      <div className="absolute top-3/5 left-[22%] w-[55%] h-[220px] border border-[#502877] rounded-[50%]"></div>
-      <div className="absolute top-3/5 left-[20%] w-[60%] h-[240px] border border-[#502877] rounded-[50%]"></div>
+      <div className="absolute top-3/5 left-1/4 w-[50%] h-[220px] border border-[#602888] rounded-[50%] opacity-70"></div>
+      <div className="absolute top-3/5 left-[22%] w-[55%] h-[220px] border border-[#703098] rounded-[50%] opacity-80"></div>
+      <div className="absolute top-3/5 left-[20%] w-[60%] h-[220px] border border-[#8038A8] rounded-[50%] opacity-90"></div>
     </div>
   );
 };
