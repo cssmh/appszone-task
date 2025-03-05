@@ -21,7 +21,7 @@ import logo from "../assets/skillsLogo.png";
 
 const Skills = () => {
   return (
-    <div className="bg-[#11071f] py-20 flex flex-col items-center relative">
+    <div className="bg-[#11071f] py-10 lg:py-20 flex flex-col items-center relative">
       <h1 className="text-2xl text-center">
         I'm currently looking to join a{" "}
         <span className="text-[#A362FF]">cross-functional</span> team
@@ -30,59 +30,59 @@ const Skills = () => {
         that values improving people's lives through accessible design
       </h5>
       <div className="flex gap-4 items-center justify-center mt-10">
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={figma} alt="figma" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={react} alt="react" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={c} alt="c" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={node} alt="node" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={redux} alt="redux" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={js} alt="js" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={css} alt="css" />
         </div>
       </div>
       <div className="flex gap-4 items-center justify-center mt-5">
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={ad} alt="adobe" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={next} alt="nextjs" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={g} alt="g" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={ai} alt="ai" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={express} alt="express" />
         </div>
-        <div className="bg-[#251C31] w-14 h-14 rounded-full flex items-center justify-center">
+        <div className="bg-[#251C31] md:w-14 md:h-14 rounded-full flex items-center justify-center">
           <img src={mongo} alt="mongo" />
         </div>
       </div>
-      <div className="flex justify-center w-[350px] mx-auto">
+      <div className="flex justify-center w-[300px] md:w-[350px] mx-auto">
         <div>
           <img src={arrow1} alt="arrow1" />
         </div>
-        <div className="pr-10">
+        <div className="pr-3 md:pr-10">
           <img src={arrow2} alt="arrow2" />
         </div>
-        <div className="pr-10">
+        <div className="pr-3 md:pr-10">
           <img src={arrow3} alt="arrow3" />
         </div>
-        <div className="pr-10">
+        <div className="pr-3 md:pr-10">
           <img src={arrow4} alt="arrow4" />
         </div>
         <div>

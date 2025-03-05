@@ -17,14 +17,12 @@ const GlowBg = ({ className }) => {
 const projects = [
   {
     id: 1,
-    title: "Example Project",
     description:
       "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track.Create and save new playlists of recommended tracks based on your existing playlists and more.",
     projectImg: img1,
   },
   {
     id: 2,
-    title: "Example Project",
     description:
       "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track.Create and save new playlists of recommended tracks based on your existing playlists and more.",
     projectImg: img2,
@@ -33,16 +31,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20">
+    <section className="py-10 lg:py-20">
       <div className="flex flex-col space-y-32">
         {projects.map((project, i) => (
           <div
             key={i}
-            className={`relative flex ${
-              i % 2 !== 0 ? "flex-row-reverse" : ""
+            className={`relative flex flex-col lg:flex-row ${
+              i % 2 !== 0 ? "flex-col lg:flex-row-reverse" : ""
             } gap-5 p-5 rounded-2xl`}
           >
-            <div>
+            <div className="hidden lg:block">
               <GlowBg
                 className={`opacity-70 ${
                   i % 2 !== 0
@@ -57,15 +55,15 @@ const Projects = () => {
               } pt-5`}
             >
               <h6 className="text-[#9857D3] font-semibold">Featured Project</h6>
-              <h1 className="text-3xl font-semibold text-[#CCD6F6]">
-                {project.title}
+              <h1 className="text-3xl font-semibold text-[#ccd6f6]">
+                Example Project
               </h1>
               <div
-                className={`z-10 absolute ${
-                  i % 2 !== 0 ? "transform -translate-x-[90px]" : ""
+                className={`lg:z-10 lg:absolute ${
+                  i % 2 !== 0 ? "transform lg:-translate-x-[90px]" : ""
                 }`}
               >
-                <div className="text-left bg-[#201335]/30 w-[550px] -mr-10 mt-8 backdrop-blur-2xl py-5 px-8 pr-12 text-[#B6BDDE] font-medium rounded-2xl">
+                <div className="text-left bg-[#201335]/30 lg:w-[550px] lg:-mr-10 mt-8 backdrop-blur-2xl py-5 px-8 lg:pr-12 text-[#B6BDDE] font-medium rounded-2xl">
                   {project.description}
                 </div>
                 <div
