@@ -4,8 +4,6 @@ This project is a front-end design implementation based on a Figma template prov
 
 **Live Demo:** [https://appszone-task.vercel.app](https://appszone-task.vercel.app)
 
----
-
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -17,8 +15,6 @@ This project is a front-end design implementation based on a Figma template prov
 - [Packages Used](#packages-used)
 - [Evaluation Criteria](#evaluation-criteria)
 - [Submission](#submission)
-
----
 
 ## Project Overview
 
@@ -32,8 +28,6 @@ The project is a responsive web template that includes the following sections:
 
 The design is pixel-perfect and fully responsive, adhering to the provided Figma template.
 
----
-
 ## Features
 
 - **Responsive Design**: The template is fully responsive and works seamlessly across all devices.
@@ -42,8 +36,6 @@ The design is pixel-perfect and fully responsive, adhering to the provided Figma
 - **TailwindCSS**: Utility-first CSS framework for rapid development and consistency.
 - **Vite**: Fast and modern build tool for development and production.
 
----
-
 ## Technologies Used
 
 - **React.js** (v19.0.0)
@@ -51,8 +43,6 @@ The design is pixel-perfect and fully responsive, adhering to the provided Figma
 - **Vite** (Build Tool)
 - **React Icons** (for icons)
 - **Figma** (for design reference)
-
----
 
 ## Installation
 
