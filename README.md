@@ -10,11 +10,6 @@ This project is a front-end design implementation based on a Figma template prov
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Running the Project](#running-the-project)
-- [Project Structure](#project-structure)
-- [Packages Used](#packages-used)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Submission](#submission)
 
 ## Project Overview
 
